@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 php:8.1-apache
+FROM --platform=linux/amd64 php:alpine3.14
 RUN apt-get -o Acquire::ForceIPv4=true update && apt-get -o Acquire::ForceIPv4=true install -y --no-install-recommends \
     git \
     iputils-ping \
