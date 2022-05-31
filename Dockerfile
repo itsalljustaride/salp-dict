@@ -1,4 +1,6 @@
 FROM --platform=linux/amd64 php:8.1-apache
+ENV http_proxy=http:...
+ENV https_proxy=http:...
 RUN apt-get -o Acquire::ForceIPv4=true update && apt-get -o Acquire::ForceIPv4=true install -y --no-install-recommends \
     git \
     iputils-ping \
